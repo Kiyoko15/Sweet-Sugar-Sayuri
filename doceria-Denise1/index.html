@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Doces caseiros da Sayuri no Japão">
+    <meta name="author" content="Kiyoko Sato">
+    <meta name="Keywords" content="Beijinho, brigadeiro, olho de sogra, doces caseiros da Sayuri">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Sweet Sugar Sayuri</title>
+</head>
+
+<body>
+    <header class="logo">
+        <div class="logo_container">
+            <img src="pictures/logo.jpeg" alt="Sweet sugar logo" width="90" height="90" style="border-radius: 8px;">
+            <p class="logo_container__subtitle" data-i18n="logo_sweetShop">
+                Doceria da Sayuri
+            </p><!--data-i18n=doceria_sayuri-->
+        </div>
+    </header>
+    <!-- Nav -->
+    <nav class="nav">
+        <div class="nav_container">
+            <button class="nav_container__menuToggle" id="menuToggle" aria-label="menu">
+                <span></span>
+            </button>
+
+            <div class="nav_container__languageSelector" id="languageSelector">
+                <button class="nav_container__languageBtn">
+                    🌐Idiomas
+                </button>
+                <div class="nav_container__languageOptions" id="languageOptions">
+                    <button class="nav_container__languageOption" data-lang="pt">Portugues</button>
+                    <button class="nav_container__languageOption" data-lang="en">English</button>
+                    <button class="nav_container__languageOption" data-lang="ja">日本語</button>
+                    <button class="nav_container__languageOption" data-lang="zh">中文</button>
+                </div>
+            </div>
+            <ul class="nav_container__navMenu" id="navMenu" aria-expanded="false">
+                <li><a href="#home" data-i18n="navHome">Home</a></li>
+                <li><a href="#products" data-i18n="navProducts">Produtos</a></li>
+                <li><a href="#videos" data-i18n="navVideos">Vídeos</a></li>
+                <li><a href="#registration" data-i18n="navRegister">Cadastro</a></li>
+                <li><a href="#contact" data-i18n="navContact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Banner -->
+    <section class="hero" id="heroBanner">
+        <div class="hero_content">
+            <h2 data-i18n="page-title" class="hero_content__title">Doces Feitos Com Amor</h2><!--.hero_content h2-->
+            <p data-i18n="page-slogan" class="hero_content__slogan">Delicie-se como nossos brigadeiros, cajuzinhos e doces artesanais</p>
+            <!--.hero_content p-->
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="product" id="products">
+        <!-- Products with translatable data -->
+        <div class="product_card">
+            <img src="pictures/bombom-coco-ameixaNet.png" alt="Bombom de Coco com Ameixa" class="product_card__img">
+            <div class="product_card__info">
+                <h3 data-i18n="prod1_title">Bombom de Cupuaçú</h3>
+                <p data-i18n="prod1_desc">Casquinha de chocolate 50% cacau e recheio de creme de cupuaçú.</p>
+                <p class="product_card__price" data-i18n="prod1_price"> JP¥150 cada ou JP¥3000 a caixa com 20 unidades
+                </p>
+            </div>
+        </div>
+
+        <div class="product_card">
+            <img src="pictures/bombom-de-amarulaNet1.png" alt="Bombom de Amarula" class="product_card__img">
+            <div class="product_card__info">
+                <h3 data-i18n="prod2_title">Bombom de Amarula</h3>
+                <p data-i18n="prod2_desc">Casquinha de chocolate 70% cacau e recheio de creme de amarula.</p>
+                <p class="product_card__price" data-i18n="prod2_price"> JP¥300 cada ou JP¥5000 a caixa com 20 unidades
+                </p>
+            </div>
+        </div>
+
+        <div class="product_card">
+            <img src="pictures/bombom-de-amendoimNet.png" alt="Bombom de Amendoim" class="product_card__img">
+            <div class="product_card__info">
+                <h3 data-i18n="prod3_title">Bombom de Amendoim</h3>
+                <p data-i18n="prod3_desc">Casquinha de chocolate 50% cacau e recheio de creme de amendoim com pedação de
+                    amendoim moído.</p>
+                <p class="product_card__price" data-i18n="prod3_price"> JP¥150 cada ou JP¥3000 a caixa com 20 unidades
+                </p>
+            </div>
+        </div>
+
+        <div class="product_card">
+            <img src="pictures/bombom-de-amarulaNet.png" alt="Bombom de Amarula" class="product_card__img">
+            <div class="product_card__info">
+                <h3 data-i18n="prod4_title">Bombom de Amarula</h3>
+                <p data-i18n="prod4_desc">Casquinha de chocolate 50% cacau e recheio de creme de amarula.</p>
+                <p class="product_card__price" data-i18n="prod4_price"> JP¥150 cada ou JP¥3000 a caixa com 20 unidades
+                </p>
+            </div>
+        </div>
+
+        <div class="product_card">
+            <img src="pictures/bombom-de-maracujaNet.png" alt="Bombom de Maracujá" class="product_card__img">
+            <div class="product_card__info">
+                <h3 data-i18n="prod5_title">Bombom de Maracujá</h3>
+                <p data-i18n="prod5_desc">Casquinha de chocolate 50% cacau e recheio de creme de maracujá.</p>
+                <p class="product_card__price" data-i18n="prod5_price"> JP¥150 cada ou JP¥3000 a caixa com 20 unidades
+                </p>
+            </div>
+        </div>
+
+        <div class="product_card">
+            <img src="pictures/bombom-de-cupuacuNet.png" alt="Bombom de Cupuaçú" class="product_card__img">
+            <div class="product_card__info">
+                <h3 data-i18n="prod6_title">Bombom de Cupuaçú</h3>
+                <p data-i18n="prod6_desc">Casquinha de chocolate 50% cacau e recheio de creme de cupuaçú.</p>
+                <p class="product_card__price" data-i18n="prod6_price"> JP¥150 cada ou JP¥3000 a caixa com 20 unidades
+                </p>
+            </div>
+        </div>
+
+        <div class="product_card">
+            <img src="pictures/bombom-doce-de-leite-com-nozesNet.png" alt="Bombom de Doce de Leite com Nozes"
+                class="product_card__img">
+            <div class="product_card__info">
+                <h3 data-i18n="prod7_title">Bombom de Doce de Leite com Nozes</h3>
+                <p data-i18n="prod7_desc">Casquinha de chocolate 50% cacau e recheio de doce de leite com pedaços de
+                    nozes.</p>
+                <p class="product_card__price" data-i18n="prod7_price"> JP¥150 cada ou JP¥3000 a caixa com 20 unidades
+                </p>
+            </div>
+        </div>
+
+        <div class="product_card">
+            <img src="pictures/bombom-de-leite-com-cocoNet.png" alt="Bombom de Doce de Leite com Coco"
+                class="product_card__img">
+            <div class="product_card__info">
+                <h3 data-i18n="prod8_title">Bombom de Doce de Leite com Coco</h3>
+                <p data-i18n="prod8_desc">Casquinha de chocolate 50% cacau e recheio de doce de leite com pedaços de
+                    coco.</p>
+                <p class="product_card__price" data-i18n="prod8_price"> JP¥150 cada ou JP¥3000 a caixa com 20 unidades
+                </p>
+            </div>
+        </div>
+
+        <div class="product_card">
+            <img src="pictures/bombom-doce-de-leite-com-ameixa.png" alt="Bombom de Doce de Leite com Ameixa"
+                class="product_card__img">
+            <div class="product_card__info">
+                <h3 data-i18n="prod9_title">Bombom de Doce de Leite com Ameixa</h3>
+                <p data-i18n="prod9_desc">Casquinha de chocolate 50% cacau e recheio de doce de leite com uma ameixa
+                    inteira no meio.</p>
+                <p class="product_card__price" data-i18n="prod9_price"> JP¥150 cada ou JP¥3000 a caixa com 20 unidades
+                </p>
+            </div>
+        </div>
+
+        <div class="product_card">
+            <img src="pictures/doce-de-brigadeiro1.png" alt="Brigadeiro" class="product_card__img">
+            <div class="product_card__info">
+                <h3 data-i18n="prod10_title">Brigadeiros Gourmet</h3>
+                <p data-i18n="prod10_desc">Brigadeiros cremosos com chocolate 70% cacau e opções de coberturas
+                    especiais.
+                </p>
+                <p class="product_card__price" data-i18n="prod10_price">JP¥160 cada ou JP¥3500 a caixa com 20 unidades
+                </p>
+            </div>
+        </div>
+
+        <div class="product_card">
+            <img src="pictures/doce-de-beijinho1.png" alt="Doce de Beijinho" class="product_card__img">
+            <div class="product_card__info">
+                <h3 data-i18n="prod11_title">Beijinho</h3>
+                <p data-i18n="prod11_desc">Brigadeiro branco com coco ralado e uma gota de chocolate no topo do doce.
+                </p>
+                <p class="product_card__price" data-i18n="prod11_price">JP¥160 cada ou JP¥3500 a caixa com 20 unidades
+                </p>
+            </div>
+        </div>
+
+        <div class="product_card">
+            <img src="pictures/doce-olho-de-sogra.png" alt="Doce olho de Sogra" class="product_card__img">
+            <div class="product_card__info">
+                <h3 data-i18n="prod13_title">Doce olho de Sogra</h3>
+                <p data-i18n="prod13_desc">Ameixa seca recheiada com doce de creme branco.</p>
+                <p class="product_card__price" data-i18n="prod13_price">JP¥160 cada ou JP¥3500 a caixa com 20 unidades
+                </p>
+            </div>
+        </div>
+
+        <div class="product_card">
+            <img src="pictures/doce-pao-de-mel.png" alt="Pão de Mel" class="product_card__img">
+            <div class="product_card__info">
+                <h3 data-i18n="prod14_title">Pão de Mel</h3>
+                <p data-i18n="prod14_desc">Mini bolo de mel com cobertura de chocolate 65%.</p>
+                <p class="product_card__price" data-i18n="prod14_price">JP¥450</p>
+            </div>
+        </div>
+    </section>
+    <!-- Video Section -->
+    <section class="videos" id="videos">
+        <h2 class="videos_title" data-i18n="videosTitle">Nosso Processo Artesanal</h2>
+        <div class="videos_carousel">
+            <button class="videos_carousel__btn prev" id="prevBtn">❮</button>
+
+            <div class="videos_carousel__container" id="carouselContainer">
+                <div class="videos_container__slide">
+                   
+                    <video controls muted track kind="captions">
+                        <source src="videos/VID-20250529-WA0108.mp4" type="video/mp4">
+                        <source src="videos/VID-20250529-WA0108.mp4.web" type="video/web">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="videos_container__caption" data-i18n="video1_caption">
+                        Bombons de Brigadeiro
+                    </p>
+                </div>
+               <!-- Lembrar de modificar o video de amendoim não vai ser  postado -->
+                <div class="videos_container__slide">
+                    <video controls muted track kind="captions">
+                        <source src="videos/VID-20250529-WA0110.mp4" type="video/mp4">
+                        <source src="videos/VID-20250529-WA0110.mp4.web" type="video/web">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="videos_container__caption" data-i18n="video3_caption">
+                        Bombons de Cajuzinhos
+                    </p>
+                </div>
+                <div class="videos_container__slide">
+                    <video controls muted track kind="captions">
+                        <source src="videos/VID-20250529-WA0111.mp4" type="video/mp4">
+                        <source src="videos/VID-20250529-WA0111.mp4.web" type="video/web">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="videos_container__caption" data-i18n="video4_caption">
+                        Bombons de morango
+                    </p>
+                </div>
+            </div>
+            <button class="videos_carousel__btn next" id="nextBtn">❯</button>
+        </div>
+        <div class="videos_indicators">
+            <span class="videos_indicator active" data-index="0"></span>
+            <span class="videos_indicator" data-index="1"></span>
+            <span class="videos_indicator" data-index="2"></span>
+        </div>
+    </section>
+    <!-- Review section -->
+    <section class="review" id="review">
+        <h2 data-i18n="review-title" class="review_title">Histórias com Sabor de Felicidade</h2>
+        <!-- Form to new review -->
+        <div class="reviews_form">
+            <h3 class="reviews_form__title">Deixe sua avaliação</h3>
+            <form action="{{route('review.submit')}}" method="POST">
+                @csrf
+                <div class="reviews_form__group">
+                    <label for="reviewFormName" data-i18n="reviewsFormName">Seu Nome</label>
+                    <input type="text" id="reviewsName" name="reviewName" required>
+                </div>
+
+                <div class="reviews_form__group">
+                    <label for="rating" data-i18n="reviewFormRating">Sua Nota</label>
+                    <select class="reviews_form__option" name="rating" id="rating" required>
+                        <option value="5">⭐⭐⭐⭐⭐ (Excelente)</option>
+                        <option value="4">⭐⭐⭐⭐ (Ótimo)</option>
+                        <option value="3">⭐⭐⭐ (Bom)</option>
+                        <option value="2">⭐⭐ (Regular)</option>
+                        <option value="1">⭐ (Ruim)</option>
+                    </select>
+                </div>
+                <div class="reviews_form__group">
+                    <label for="reviewFormText" data-i18n="reviewFormText">Escreva a sua Avaliação</label>
+                    <textarea name="reviewFormText" id="reviewFormText" rows="4" required
+                        placeholder="Conte para nós sua experiêcia na Sweet Sugar da Sayuri"></textarea>
+                </div>
+                <button class="reviews_btn" type="submit" data-i18n="reviews_form__submit">Enviar para
+                    moderação</button>
+            </form>
+        </div>
+
+        <!-- Approved Reviews -->
+        <div class="reviewList">
+            <h3 class="reviewList_approved" data-i18n="reviewListApproved">Avaliações aprovadas</h3>
+            <div class="reviewList_card" data-status="approved">
+                <div class="reviewList_card__header">
+                    <p class="reviewList_card__name">Ana Silva</p>
+                    <p class="reviewList_card__date">2026/01/12</p>
+                </div>
+                <div class="reviewList_card__stars">⭐⭐⭐⭐⭐</div>
+                <p class="reviewList_card__text">Os brigadeiros são incríveis e as embalagens são lindas! Recomendo
+                    de mais!</p>
+            </div>
+
+            <div class="reviewList_card" data-status="approved">
+                <div class="reviewList_card__header">
+                    <p class="reviewList_card__name">Carlos Mendez</p>
+                    <div class="reviewList_card__date">10/04/2025</div>
+                </div>
+                <div class="reviewList_card__stars">⭐⭐⭐⭐⭐</div>
+                <p class="reviewList_card__text">Cajuzinhos perfeito! Minha mãe adorou o presente. Voltarei a comprar</p>
+            </div>
+            <!-- NO laravel terá que fazer um loop: @foreach ($approvedReviews as $review) -->
+        </div>
+    </section>
+
+    <!-- register section -->
+    <section class="registration" id="registration">
+        <h2 class="registration_title">Cadastre-se e Receba Nossas Ofertas!</h2>
+        <div class="registration_container">
+            <form action="{{route('customer.register')}}" method="POST">@csrf
+                <div class="registration_group">
+                    <label for="name" data-i18n="registrationName">Nome Completo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="registration_group">
+                    <label for="email" data-i18n="registrationEmail">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="registration_group">
+                    <label for="phone" data-i18n="registrationPhone">Telefone(WhatsApp)</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="registration_group">
+                    <label for="birthday" data-i18n="registrationBirthday">Data de Nascimento</label>
+                    <input type="date" id="birthday" name="birthday">
+                </div>
+                <div class="registration_group">
+                    <label for="preferences" data-i18n="registrationPreferences">Preferências</label>
+                    <select name="preferences" id="registrationGroupPreferences" class="registration_group__preferences">
+                        <option value="" data-i18n="registrationPrefAll">Todos os Doces</option>
+                        <option value="brigadeiro" data-i18n="registrationPrefBrig">Brigadeiro</option>
+                        <option value="caju" data-i18n="registrationPrefCaju">Cajuzinho</option>
+                        <option value="bombom" data-i18n="registrationPrefBombom">Bombom</option>
+                    </select>
+                </div>
+                <button class="registration_form__btn" type="submit">Cadastrar</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <h2 class="contact_title">Faça sua encomenda</h2>
+        <a href="">
+            <img src="icons/whatsapp.png" alt="WhatsApp icon">
+            <p>WhatsApp: (+81) 090-7777-7896</p>
+        </a>
+        <a href="">
+            <img src="icons/instagram.png" alt="Instagram icon">
+            <p>Instagram</p>
+        </a>
+        <a href="">
+            <img src="icons/mail.png" alt="email icon">
+            <p>Email: contato@sweetsugar.com.br</p>
+        </a>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <p>Design by <a href="#" target="_blank">Danielle Cristina Malanga</a></p>
+        <p>Development by <a href="https://www.linkedin.com/in/cinthia-kiyoko-sato-a23709138/" target="_blank">Cinthia
+                Kiyoko Sato</a></p>
+        <p>&copy; 2026 Kiyoko Sato. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
